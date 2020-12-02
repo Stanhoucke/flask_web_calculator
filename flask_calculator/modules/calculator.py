@@ -10,5 +10,5 @@ class Calculator():
         return number_1 * number_2
 
     def divide(self, number_1, number_2):
-        return number_1 / number_2
+        return int(number_1 / number_2)
     
