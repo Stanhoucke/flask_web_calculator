@@ -9,18 +9,16 @@ def index():
 
 @app.route("/add/<number_1>,<number_2>")
 def add(number_1, number_2):
-    integer_1 = int(number_1)
-    integer_2 = int(number_2)
-    return f"The answer is: {calculator.add(integer_1, integer_2)}"
+    return f"The answer is: {calculator.add(number_1, number_2)}"
 
 @app.route("/subtract/<number_1>,<number_2>")
 def subtract(number_1, number_2):
-    return f"The answer is: {calculator.subtract(int(number_1), int(number_2))}"
+    return f"The answer is: {calculator.subtract(number_1, number_2)}"
 
 @app.route("/multiply/<number_1>,<number_2>")
 def multiply(number_1, number_2):
-    return f"The answer is: {calculator.multiply(int(number_1), int(number_2))}"
+    return f"The answer is: {calculator.multiply(number_1, number_2)}"
 
 @app.route("/divide/<number_1>,<number_2>")
 def divide(number_1, number_2):
-    return f"The answer is: {calculator.divide(int(number_1), int(number_2))}"
+    return f"The answer is: {calculator.divide(number_1, number_2)}"
